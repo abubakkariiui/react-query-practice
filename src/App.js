@@ -5,6 +5,10 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { HomePage } from "./components/Home.page";
 import { RQSuperHeroesPage } from "./components/RQSuperHeroes.page";
 import { SuperHeroesPage } from "./components/SuperHeroes.page";
+import RQSuperHero from "./components/RQSuperHero.page";
+import ParallelQueries from "./components/ParallelQueries.page";
+import DynamicParallel from "./components/DynamicParallel.page";
+import DependentQueries from "./components/DependentQueries";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +31,18 @@ function App() {
             </ul>
           </nav>
           <Switch>
+            <Route path="/rq-dependent">
+              <DependentQueries email="test@gmail.com" />
+            </Route>
+            <Route path="/rq-dynamic-parallel">
+              <DynamicParallel heroIds={[1, 3]} />
+            </Route>
+            <Route path="/rq-parallel">
+              <ParallelQueries />
+            </Route>
+            <Route path="/rq-super-heroes/:heroId">
+              <RQSuperHero />
+            </Route>
             <Route path="/super-heroes">
               <SuperHeroesPage />
             </Route>
