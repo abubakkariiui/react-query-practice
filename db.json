@@ -16,7 +16,7 @@
       "alterEgo": "Princess Diana"
     },
     {
-      "name": "asdf",
+      "name": "test",
       "alterEgo": "asdf",
       "id": 4
     }
@@ -39,12 +39,27 @@
     {
       "id": "test@gmail.com",
       "channelId": "Epic Movement"
+    },
+    {
+      "id": "test1@gmail.com",
+      "channelId": "Coding Train"
     }
   ],
   "channels": [
     {
       "id": "Epic Movement",
-      "courses": ["react", "angular", "vue"]
+      "courses": [
+        "react",
+        "angular",
+        "vue"
+      ]
+    },
+    {
+      "id": "Coding Train",
+      "courses": [
+        "p5.js",
+        "processing"
+      ]
     }
   ],
   "colors": [
